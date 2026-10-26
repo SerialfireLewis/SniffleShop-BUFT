@@ -155,6 +155,7 @@ README.md                    Installation and catalog documentation
 UPSTREAMS.md                 Release provenance and maintenance notes
 scripts/validate_source.py   Current AltSource/SideStore metadata validator
 scripts/check_links.py       External icon/screenshot/IPA reachability checker
+scripts/catalog_report.py    Catalog category, OS metadata, and age report
 .github/workflows/validate.yml
                              CI validation + link checks on updates and weekly
 ```
