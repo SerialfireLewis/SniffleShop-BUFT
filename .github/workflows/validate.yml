@@ -5,6 +5,9 @@ on:
     paths:
       - "source.json"
       - "scripts/**"
+      - "README.md"
+      - "ROM_TOOLS.md"
+      - "UPSTREAMS.md"
       - ".github/workflows/validate.yml"
   pull_request:
     paths:
@@ -28,6 +31,8 @@ jobs:
           python-version: "3.x"
       - name: Validate source
         run: python3 scripts/validate_source.py source.json
+      - name: Run regression tests
+        run: python3 -m unittest discover -s scripts -p "test_*.py"
 
   links:
     runs-on: ubuntu-latest
