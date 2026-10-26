@@ -2,7 +2,7 @@
 
 Last reviewed: **2026-10-24**
 
-SniffleShop: BUFT points to upstream IPA files directly; it does not rehost them. The catalog now tracks 80 distinct apps and 102 downloadable IPA builds, including real rollback versions from the upstream NOOP and VortX feeds. The table below identifies upstream release pages and compatibility caveats. Latest CI passed both schema validation and a live link/byte-size audit: **214 URLs checked, 102 IPA sizes checked, zero failures**.
+SniffleShop: BUFT points to upstream IPA files directly; it does not rehost them. The catalog now tracks 80 distinct apps and 102 downloadable IPA builds, including real rollback versions from the upstream NOOP and VortX feeds. The table below identifies upstream release pages and compatibility caveats. GitHub Actions runs schema validation, regression tests, and a live URL/declared-size audit. Link status is time-dependent; consult the repository's Actions tab for the latest run rather than treating a past audit as a guarantee.
 
 | App | Tracked release | Official upstream | Notes |
 | --- | --- | --- | --- |
