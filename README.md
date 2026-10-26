@@ -2,7 +2,7 @@
 
 **The Buffed edition.** An independently maintained expansion of SniffleShop focused on a larger, better-organized and verifiable catalog for SideStore, AltStore-compatible workflows, and LiveContainer users.
 
-> BUFT starts with the existing 80-app / 102-build catalog and its validation infrastructure, then evolves independently. The source stays compatible; companion guides and automation can grow without pretending every useful tool is an IPA.
+> BUFT starts with the existing 80-app / 102-build catalog and its validation infrastructure, then evolves independently. The source stays compatible; companion guides and automation can grow without pretending every useful tool is an IPA. The catalog is validated in CI, with unit tests for schema regressions and a separate upstream link/size audit.
 
 SniffleShop: BUFT is a SideStore-compatible AltSource for sideloadable iOS software. It tracks a curated set of useful open-source apps, emulators, developer utilities, JIT tools, Linux/terminal software, and other sideloading-friendly projects using official upstream downloads.
 
@@ -19,7 +19,7 @@ In SideStore, open **Sources**, tap **+ / Add Source**, paste the URL, and add *
 You can also use SideStore's source URL scheme:
 
 ```text
-sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2FSerialfireLewis%2FSniffleShop: BUFT%2Fmain%2Fsource.json
+sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2FSerialfireLewis%2FSniffleShop-BUFT%2Fmain%2Fsource.json
 ```
 
 ## Catalog
@@ -165,6 +165,7 @@ No third-party Python packages are required.
 
 ```bash
 python3 scripts/validate_source.py source.json
+python3 -m unittest discover -s scripts -p 'test_*.py'
 python3 scripts/check_links.py source.json
 ```
 
