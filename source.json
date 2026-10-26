@@ -1918,6 +1918,66 @@
           "localizedDescription": "Fixes for iOS 27 compatibility, JIT-less mod importing, safe mode and helper updates."
         }
       ]
+    },
+    {
+      "name": "EscapeOS",
+      "bundleIdentifier": "com.ipaside.escapeos",
+      "developerName": "pwnapplehat",
+      "subtitle": "App-data browser, backup and restore",
+      "localizedDescription": "EscapeOS is an on-device file browser and app-data backup/restore tool for sideloaded iOS. It can browse supported app data containers, edit and extract archives, create ZIP backups with SHA-256 manifests, and restore data. Requires LocalDevVPN and a pairing file for app listing. Important: cross-app container access depends on the bad_query exploit and is only supported on iOS 26.0–26.6.1 and iOS 27.0 beta 4; later versions are unsupported. Minimum install version is iOS 18.0.",
+      "iconURL": "https://raw.githubusercontent.com/pwnapplehat/EscapeOS/main/docs/brand/icon.png",
+      "tintColor": "#5A7CE2",
+      "versions": [
+        {
+          "version": "0.1.8",
+          "date": "2026-10-16T14:56:54Z",
+          "downloadURL": "https://github.com/pwnapplehat/EscapeOS/releases/download/v0.1.8/EscapeOS-0.1.8.ipa",
+          "size": 7307240,
+          "minOSVersion": "18.0",
+          "localizedDescription": "Adds ongoing improvements to the app-data browser, backup/restore, archive handling, and file operations. See upstream compatibility notes before relying on cross-app container access."
+        }
+      ],
+      "category": "utilities"
+    },
+    {
+      "name": "iDevice Toolkit",
+      "bundleIdentifier": "com.idevicecentral.toolkit",
+      "developerName": "iDevice Central",
+      "subtitle": "iOS customization and IPA utility toolkit",
+      "localizedDescription": "iDevice Toolkit provides iOS customization features, a file manager, and IPA tweak-injection tools on supported system versions. The developer explicitly states that it does not work inside LiveContainer and must be installed as a normal sideload. Built-in system tweaks are limited to specific iOS releases; file-manager and IPA-injection features have separate compatibility bounds. Review the official release notes before use.",
+      "iconURL": "https://raw.githubusercontent.com/GeoSn0w/iDevice-Toolkit/main/iDevice%20Toolkit/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "tintColor": "#2878D0",
+      "versions": [
+        {
+          "version": "2.0.1",
+          "date": "2025-07-13T23:39:35Z",
+          "downloadURL": "https://github.com/GeoSn0w/iDevice-Toolkit/releases/download/v2.0.1/iDeviceToolKit-v2.0.1-idevicecentral.ipa",
+          "size": 2031389,
+          "minOSVersion": "16.0",
+          "localizedDescription": "Official v2.0.1 IPA release. Supports selected system tweaks on iOS 16.0–18.3.2; file manager and IPA tweak injection support have different limits, including iOS 26 for selected functions. Not compatible with LiveContainer."
+        }
+      ],
+      "category": "utilities"
+    },
+    {
+      "name": "AltStore Classic",
+      "bundleIdentifier": "com.rileytestut.AltStore",
+      "developerName": "AltStore Team",
+      "subtitle": "Open-source iOS app sideloading manager",
+      "localizedDescription": "AltStore Classic is an open-source sideloading app for installing and refreshing apps signed with a personal Apple developer account. It supports AltStore sources and works alongside a computer-hosted AltServer workflow. This is the classic sideloading build, not AltStore PAL. It overlaps with SideStore, so most users only need one signing workflow.",
+      "iconURL": "https://raw.githubusercontent.com/altstoreio/AltStore/main/AltStore/Resources/Icons.xcassets/AppIcon.appiconset/AltStore-180.png",
+      "tintColor": "#2B7FFF",
+      "versions": [
+        {
+          "version": "2.3",
+          "date": "2026-09-30T20:16:23Z",
+          "downloadURL": "https://github.com/altstoreio/AltStore/releases/download/v2.3/AltStore_Classic_Notarized_2_3.ipa",
+          "size": 40616419,
+          "minOSVersion": "14.0",
+          "localizedDescription": "Official AltStore Classic v2.3 notarized IPA release."
+        }
+      ],
+      "category": "developer"
     }
   ],
   "news": []
