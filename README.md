@@ -11,7 +11,7 @@ SniffleShop: BUFT is a SideStore-compatible AltSource for sideloadable iOS softw
 Paste this source URL into SideStore:
 
 ```text
-https://raw.githubusercontent.com/SerialfireLewis/SniffleShop-BUFT-BUFT/main/source.json
+https://raw.githubusercontent.com/SerialfireLewis/SniffleShop-BUFT/main/source.json
 ```
 
 In SideStore, open **Sources**, tap **+ / Add Source**, paste the URL, and add **SniffleShop: BUFT**.
