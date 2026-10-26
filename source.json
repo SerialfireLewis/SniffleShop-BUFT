@@ -1978,6 +1978,31 @@
         }
       ],
       "category": "developer"
+    },
+    {
+      "name": "PokeMMO",
+      "bundleIdentifier": "eu.pokemmo.client",
+      "developerName": "PokeMMO",
+      "subtitle": "Free-to-play cross-platform monster-catching MMO",
+      "localizedDescription": "PokeMMO is a persistent online multiplayer game for iOS, PC, Mac, Linux, and Android. It supports cross-platform play and requires an account and an internet connection. The game does not bundle copyrighted game ROMs; players must supply game files they have the legal right to use. The official iOS source provides this IPA directly.",
+      "iconURL": "https://pokemmo.com/build/images/altstore.f5930b35.png",
+      "tintColor": "#73ACE2",
+      "screenshotURLs": [
+        "https://pokemmo.com/build/images/screenshot/c.b5d935d8.png",
+        "https://pokemmo.com/build/images/screenshot/b.3a233486.png",
+        "https://pokemmo.com/build/images/screenshot/d.4080dd9c.png"
+      ],
+      "versions": [
+        {
+          "version": "32920",
+          "date": "2026-08-16T21:10:59Z",
+          "downloadURL": "https://dl.pokemmo.com/PokeMMO-Client.ipa?r=32920",
+          "size": 146501235,
+          "minOSVersion": "12.0",
+          "localizedDescription": "Official PokeMMO iOS build 32920. Requires an account, persistent internet access, and user-supplied compatible game files."
+        }
+      ],
+      "category": "games"
     }
   ],
   "news": []
