@@ -2,7 +2,7 @@
 
 **The Buffed edition.** An independently maintained expansion of SniffleShop focused on a larger, better-organized and verifiable catalog for SideStore, AltStore-compatible workflows, and LiveContainer users.
 
-> BUFT starts with the existing 80-app / 102-build catalog and its validation infrastructure, then evolves independently. The source stays compatible; companion guides and automation can grow without pretending every useful tool is an IPA. The catalog is validated in CI, with unit tests for schema regressions and a separate upstream link/size audit.
+> BUFT starts with the existing 83-app / 105-build catalog and its validation infrastructure, then evolves independently. The source stays compatible; companion guides and automation can grow without pretending every useful tool is an IPA. The catalog is validated in CI, with unit tests for schema regressions and a separate upstream link/size audit.
 
 SniffleShop: BUFT is a SideStore-compatible AltSource for sideloadable iOS software. It tracks a curated set of useful open-source apps, emulators, developer utilities, JIT tools, Linux/terminal software, and other sideloading-friendly projects using official upstream downloads.
 
@@ -24,9 +24,9 @@ sidestore://source?url=https%3A%2F%2Fraw.githubusercontent.com%2FSerialfireLewis
 
 ## Catalog
 
-**80 distinct apps and 102 downloadable IPA builds** are currently tracked. Multiple versions are retained for NOOP and VortX to provide real upstream rollback options rather than fake extra app entries.
+**83 distinct apps and 105 downloadable IPA builds** are currently tracked. Multiple versions are retained for NOOP and VortX to provide real upstream rollback options rather than fake extra app entries.
 
-Current tracked apps (80 entries; 102 downloadable IPA builds including rollback versions):
+Current tracked apps (83 entries; 105 downloadable IPA builds including rollback versions):
 
 - **LiveContainer** — run guest iOS apps inside a container; the listed standalone IPA is intended for SideStore.
 - **Feather** — on-device signing and IPA/source management.
@@ -132,6 +132,9 @@ These 46 additions were imported from maintained developer releases and compatib
 - **Nuvio 0.6.4** — Open-source media player, bring your own sources (minimum iOS 16.1).
 - **Reynard 0.18.0** — Gecko-based browser, a real WebKit alternative (minimum iOS 13.0).
 - **Geode 1.5.5** — Geometry Dash mod loader and launcher for iOS (minimum iOS 14.0).
+- **EscapeOS 0.1.8** — On-device app-data browser and backup/restore utility. Requires iOS 18+ to install; cross-app container access is only supported on specific iOS 26/27 builds and requires LocalDevVPN plus a pairing file.
+- **iDevice Toolkit 2.0.1** — iOS customization, file manager, and IPA tweak-injection tools. Must be installed as a normal sideload; the developer explicitly says it does not work inside LiveContainer. Features have version-specific iOS limits.
+- **AltStore Classic 2.3** — Open-source sideloading manager. Alternative to SideStore rather than a required companion; requires the AltServer workflow.
 
 Some newer entries require iOS 26 or 27, and some emulators or game runtimes need JIT, user-supplied game files, or compatible source content. Check each entry's version metadata before installing. Modified clients are identified as such in their descriptions; an upstream release link does not imply endorsement by the original service.
 
