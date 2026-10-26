@@ -13,6 +13,9 @@ on:
     paths:
       - "source.json"
       - "scripts/**"
+      - "README.md"
+      - "ROM_TOOLS.md"
+      - "UPSTREAMS.md"
       - ".github/workflows/validate.yml"
   workflow_dispatch:
   schedule:
