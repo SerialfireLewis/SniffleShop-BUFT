@@ -1,11 +1,14 @@
 # Upstream release sources
 
-Last reviewed: **2026-10-24**
+Last reviewed: **2026-10-26**
 
-SniffleShop: BUFT points to upstream IPA files directly; it does not rehost them. The catalog now tracks 80 distinct apps and 102 downloadable IPA builds, including real rollback versions from the upstream NOOP and VortX feeds. The table below identifies upstream release pages and compatibility caveats. GitHub Actions runs schema validation, regression tests, and a live URL/declared-size audit. Link status is time-dependent; consult the repository's Actions tab for the latest run rather than treating a past audit as a guarantee.
+SniffleShop: BUFT points to upstream IPA files directly; it does not rehost them. The catalog now tracks 83 distinct apps and 105 downloadable IPA builds, including real rollback versions from the upstream NOOP and VortX feeds. The table below identifies upstream release pages and compatibility caveats. GitHub Actions runs schema validation, regression tests, and a live URL/declared-size audit. Link status is time-dependent; consult the repository's Actions tab for the latest run rather than treating a past audit as a guarantee.
 
 | App | Tracked release | Official upstream | Notes |
 | --- | --- | --- | --- |
+| EscapeOS | 0.1.8 | https://github.com/pwnapplehat/EscapeOS/releases | Minimum install version iOS 18.0; cross-app container access is supported only on iOS 26.0–26.6.1 and iOS 27.0 beta 4, with LocalDevVPN and a pairing file. Later OS versions are explicitly unsupported. |
+| iDevice Toolkit | 2.0.1 | https://github.com/GeoSn0w/iDevice-Toolkit/releases | Minimum iOS 16.0. The developer explicitly says it does not work inside LiveContainer. Built-in tweaks and file manager/IPA injection have different iOS compatibility bounds; last GitHub release is from July 2025. |
+| AltStore Classic | 2.3 | https://github.com/altstoreio/AltStore/releases | Minimum iOS 14.0. Official notarized Classic IPA. Alternative to SideStore; requires the AltServer workflow and is not AltStore PAL. |
 | LiveContainer | 3.8.0 | https://github.com/LiveContainer/LiveContainer/releases | Minimum iOS 15.0. Uses the standalone `LiveContainer.ipa`, not `LiveContainer+SideStore.ipa`. |
 | Feather | 2.9.0 | https://github.com/claration/Feather/releases | IPA byte size comes from the GitHub release asset; the project's source file currently carries an older size value. |
 | StikDebug | 3.1.15 | https://github.com/StikDebug/StikDebug/releases | Minimum iOS 17.4. Current official debugger/JIT release; iOS 17.4+. |
